@@ -58,6 +58,20 @@ body::before {
     gap: 50px;
     font-size: 30px;
 }
+
+.nav-button {
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    color: #666;
+    transform: translateY(-2px);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
 .socials{
     display: flex;
     justify-content: right;
@@ -70,10 +84,125 @@ body::before {
     text-align: center;
     font-size: 10px;
     color: grey;
+    position: fixed;
+    bottom: 5%; /* Positions it underneath the keyboard */
+    left: 0;
+    right: 0;
+    z-index: 2;
 }
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: -10px;
+}
+
+.my-favorites {
+    text-align: center;
+    margin: 20px 0;
+    display: block;
+    width: 100%;
+}
+
+.my-story {
+    text-align: center;
+    margin: 20px 0;
+    display: block;
+    width: 100%;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 60px 0 40px 0;
+    color: #333;
+}
+
+.favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.favorite-box {
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.favorite-box:hover {
+    transform: translateY(-5px);
+}
+
+.favorite-box h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.favorite-box p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.movie-poster {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.movie-poster:hover {
+    transform: scale(1.05);
+}
+
+.tv-poster {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.tv-poster:hover {
+    transform: scale(1.05);
+}
+
+.hobby-image {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.hobby-image:hover {
+    transform: scale(1.05);
+}
+.game-image{
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.game-image:hover {
+    transform: scale(1.05);
 }
