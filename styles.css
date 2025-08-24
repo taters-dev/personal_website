@@ -443,3 +443,22 @@ body::before {
 .email-link:hover {
     color: #666;
 }
+
+/* Story Content Styles */
+.story-content {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+.story-content p {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 16px;
+    text-align: left;
+}
+
+.story-content p:last-child {
+    margin-bottom: 0;
+}
