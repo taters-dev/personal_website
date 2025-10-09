@@ -333,7 +333,7 @@ body::before {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: 1fr;
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
@@ -391,6 +391,25 @@ body::before {
     background-color: #d0d0d0;
     transform: translateY(-2px);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.project-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.02);
 }
 
 /* Contact Page Styles */
